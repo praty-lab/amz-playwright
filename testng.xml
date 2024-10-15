@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserSuite" parallel="false" thread-count="1"> <!-- Set parallel to false -->
+    
+    <test name="ChromiumTest">
+        <parameter name="browserType" value="chromium"/> <!-- Define browserType for Chromium -->
+        <classes>
+            <class name="com.example.playwright.LoginTest"/>
+            <class name="com.example.playwright.AddToCartTest"/>
+        </classes>
+    </test>
+
+    <test name="FirefoxTest">
+        <parameter name="browserType" value="firefox"/> <!-- Define browserType for Firefox -->
+        <classes>
+            <class name="com.example.playwright.LoginTest"/>
+            <class name="com.example.playwright.AddToCartTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="ChromiumTest(failed)">
+    <parameter name="browserType" value="chromium"/>
+    <classes>
+      <class name="com.example.playwright.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="loginWithEmptyFields"/>
+        </methods>
+      </class> <!-- com.example.playwright.LoginTest -->
+      <class name="com.example.playwright.AddToCartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="searchAndAddToCartTest"/>
+        </methods>
+      </class> <!-- com.example.playwright.AddToCartTest -->
+    </classes>
+  </test> <!-- ChromiumTest(failed) -->
+  <test thread-count="1" name="FirefoxTest(failed)">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="com.example.playwright.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginWithEmptyFields"/>
+        </methods>
+      </class> <!-- com.example.playwright.LoginTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuite] -->

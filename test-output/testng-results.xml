@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="5" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-15T15:31:06 IST" name="CrossBrowserSuite" finished-at="2024-10-15T15:32:36 IST" duration-ms="89410">
+    <groups>
+    </groups>
+    <test started-at="2024-10-15T15:31:06 IST" name="ChromiumTest" finished-at="2024-10-15T15:32:00 IST" duration-ms="53682">
+      <class name="com.example.playwright.AddToCartTest">
+        <test-method signature="searchAndAddToCartTest()[pri:4, instance:com.example.playwright.AddToCartTest@25641d39]" started-at="2024-10-15T15:31:26 IST" name="searchAndAddToCartTest" finished-at="2024-10-15T15:32:00 IST" depends-on-methods="com.example.playwright.LoginTest.loginTest" duration-ms="33374" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-422091510343734095/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-422091510343734095/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("#a-autoid-1-announce") to be visible
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-422091510343734095/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-422091510343734095/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("#a-autoid-1-announce") to be visible
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060)
+at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1050)
+at com.microsoft.playwright.impl.PageImpl.lambda$waitForSelector$93(PageImpl.java:1553)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.PageImpl.waitForSelector(PageImpl.java:1552)
+at com.microsoft.playwright.Page.waitForSelector(Page.java:8191)
+at com.example.playwright.AddToCartTest.searchAndAddToCartTest(AddToCartTest.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-422091510343734095/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-422091510343734095/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("#a-autoid-1-announce") to be visible
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAndAddToCartTest -->
+      </class> <!-- com.example.playwright.AddToCartTest -->
+      <class name="com.example.playwright.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.example.playwright.LoginTest@51c668e3]" started-at="2024-10-15T15:31:06 IST" name="setup" finished-at="2024-10-15T15:31:09 IST" duration-ms="3128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chromium]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithInvalidCredentials()[pri:1, instance:com.example.playwright.LoginTest@51c668e3]" started-at="2024-10-15T15:31:09 IST" name="loginWithInvalidCredentials" finished-at="2024-10-15T15:31:13 IST" duration-ms="3756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method signature="loginWithEmptyFields()[pri:2, instance:com.example.playwright.LoginTest@51c668e3]" started-at="2024-10-15T15:31:13 IST" name="loginWithEmptyFields" finished-at="2024-10-15T15:31:15 IST" duration-ms="2235" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+    at CRExecutionContext.evaluateWithArguments (/tmp/playwright-java-422091510343734095/package/lib/server/chromium/crExecutionContext.js:92:33)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/tmp/playwright-java-422091510343734095/package/lib/server/javascript.js:242:12)
+    at async /tmp/playwright-java-422091510343734095/package/lib/server/frames.js:1474:13
+    at async Frame.retryWithProgressAndTimeouts (/tmp/playwright-java-422091510343734095/package/lib/server/frames.js:929:24)
+    at async ProgressController.run (/tmp/playwright-java-422091510343734095/package/lib/server/progress.js:82:22)
+    at async FrameDispatcher.textContent (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/frameDispatcher.js:178:19)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:361:22)
+}
+Call log:
+- waiting for locator("text=Enter your email or mobile phone number")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+    at CRExecutionContext.evaluateWithArguments (/tmp/playwright-java-422091510343734095/package/lib/server/chromium/crExecutionContext.js:92:33)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/tmp/playwright-java-422091510343734095/package/lib/server/javascript.js:242:12)
+    at async /tmp/playwright-java-422091510343734095/package/lib/server/frames.js:1474:13
+    at async Frame.retryWithProgressAndTimeouts (/tmp/playwright-java-422091510343734095/package/lib/server/frames.js:929:24)
+    at async ProgressController.run (/tmp/playwright-java-422091510343734095/package/lib/server/progress.js:82:22)
+    at async FrameDispatcher.textContent (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/frameDispatcher.js:178:19)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:361:22)
+}
+Call log:
+- waiting for locator("text=Enter your email or mobile phone number")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5179)
+at com.example.playwright.LoginTest.loginWithEmptyFields(LoginTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+    at CRExecutionContext.evaluateWithArguments (/tmp/playwright-java-422091510343734095/package/lib/server/chromium/crExecutionContext.js:92:33)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/tmp/playwright-java-422091510343734095/package/lib/server/javascript.js:242:12)
+    at async /tmp/playwright-java-422091510343734095/package/lib/server/frames.js:1474:13
+    at async Frame.retryWithProgressAndTimeouts (/tmp/playwright-java-422091510343734095/package/lib/server/frames.js:929:24)
+    at async ProgressController.run (/tmp/playwright-java-422091510343734095/package/lib/server/progress.js:82:22)
+    at async FrameDispatcher.textContent (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/frameDispatcher.js:178:19)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:96:14)
+    at async DispatcherConnection.dispatch (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:361:22)
+}
+Call log:
+- waiting for locator("text=Enter your email or mobile phone number")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithEmptyFields -->
+        <test-method signature="loginTest()[pri:3, instance:com.example.playwright.LoginTest@51c668e3]" started-at="2024-10-15T15:31:15 IST" name="loginTest" finished-at="2024-10-15T15:31:26 IST" duration-ms="10798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.playwright.LoginTest@51c668e3]" started-at="2024-10-15T15:32:00 IST" name="tearDown" finished-at="2024-10-15T15:32:00 IST" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.playwright.LoginTest -->
+    </test> <!-- ChromiumTest -->
+    <test started-at="2024-10-15T15:32:00 IST" name="FirefoxTest" finished-at="2024-10-15T15:32:36 IST" duration-ms="35652">
+      <class name="com.example.playwright.AddToCartTest">
+        <test-method signature="searchAndAddToCartTest()[pri:4, instance:com.example.playwright.AddToCartTest@d737b89]" started-at="2024-10-15T15:32:24 IST" name="searchAndAddToCartTest" finished-at="2024-10-15T15:32:34 IST" depends-on-methods="com.example.playwright.LoginTest.loginTest" duration-ms="10362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAndAddToCartTest -->
+      </class> <!-- com.example.playwright.AddToCartTest -->
+      <class name="com.example.playwright.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.example.playwright.LoginTest@28261e8e]" started-at="2024-10-15T15:32:00 IST" name="setup" finished-at="2024-10-15T15:32:06 IST" duration-ms="6413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithInvalidCredentials()[pri:1, instance:com.example.playwright.LoginTest@28261e8e]" started-at="2024-10-15T15:32:06 IST" name="loginWithInvalidCredentials" finished-at="2024-10-15T15:32:10 IST" duration-ms="4116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method signature="loginWithEmptyFields()[pri:2, instance:com.example.playwright.LoginTest@28261e8e]" started-at="2024-10-15T15:32:10 IST" name="loginWithEmptyFields" finished-at="2024-10-15T15:32:13 IST" duration-ms="2283" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+    at checkException (/tmp/playwright-java-422091510343734095/package/lib/server/firefox/ffExecutionContext.js:111:121)
+    at FFExecutionContext.evaluateWithArguments (/tmp/playwright-java-422091510343734095/package/lib/server/firefox/ffExecutionContext.js:82:5)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/tmp/playwright-java-422091510343734095/package/lib/server/javascript.js:242:12)
+    at async /tmp/playwright-java-422091510343734095/package/lib/server/frames.js:1474:13
+    at async Frame.retryWithProgressAndTimeouts (/tmp/playwright-java-422091510343734095/package/lib/server/frames.js:929:24)
+    at async ProgressController.run (/tmp/playwright-java-422091510343734095/package/lib/server/progress.js:82:22)
+    at async FrameDispatcher.textContent (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/frameDispatcher.js:178:19)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:96:14)
+}
+Call log:
+- waiting for locator("text=Enter your email or mobile phone number")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+    at checkException (/tmp/playwright-java-422091510343734095/package/lib/server/firefox/ffExecutionContext.js:111:121)
+    at FFExecutionContext.evaluateWithArguments (/tmp/playwright-java-422091510343734095/package/lib/server/firefox/ffExecutionContext.js:82:5)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/tmp/playwright-java-422091510343734095/package/lib/server/javascript.js:242:12)
+    at async /tmp/playwright-java-422091510343734095/package/lib/server/frames.js:1474:13
+    at async Frame.retryWithProgressAndTimeouts (/tmp/playwright-java-422091510343734095/package/lib/server/frames.js:929:24)
+    at async ProgressController.run (/tmp/playwright-java-422091510343734095/package/lib/server/progress.js:82:22)
+    at async FrameDispatcher.textContent (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/frameDispatcher.js:178:19)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:96:14)
+}
+Call log:
+- waiting for locator("text=Enter your email or mobile phone number")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5179)
+at com.example.playwright.LoginTest.loginWithEmptyFields(LoginTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("text=Enter your email or mobile phone number") resolved to 3 elements:
+    1) <span id="emailErrorAnnounce">↵  Enter your email or mobile phone number↵</span> aka getByText("Enter your email or mobile").first()
+    2) <span id="emailErrorAnnounce">↵                Enter your email or mobile phone…</span> aka locator("form[name=\"signIn\"] #emailErrorAnnounce")
+    3) <div class="a-alert-content">↵  Enter your email or mobile phone number↵</div> aka locator("#auth-email-missing-alert").getByText("Enter your email or mobile")
+
+    at checkException (/tmp/playwright-java-422091510343734095/package/lib/server/firefox/ffExecutionContext.js:111:121)
+    at FFExecutionContext.evaluateWithArguments (/tmp/playwright-java-422091510343734095/package/lib/server/firefox/ffExecutionContext.js:82:5)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async evaluateExpression (/tmp/playwright-java-422091510343734095/package/lib/server/javascript.js:242:12)
+    at async /tmp/playwright-java-422091510343734095/package/lib/server/frames.js:1474:13
+    at async Frame.retryWithProgressAndTimeouts (/tmp/playwright-java-422091510343734095/package/lib/server/frames.js:929:24)
+    at async ProgressController.run (/tmp/playwright-java-422091510343734095/package/lib/server/progress.js:82:22)
+    at async FrameDispatcher.textContent (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/frameDispatcher.js:178:19)
+    at async LongStandingScope._race (/tmp/playwright-java-422091510343734095/package/lib/utils/manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (/tmp/playwright-java-422091510343734095/package/lib/server/dispatchers/dispatcher.js:96:14)
+}
+Call log:
+- waiting for locator("text=Enter your email or mobile phone number")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithEmptyFields -->
+        <test-method signature="loginTest()[pri:3, instance:com.example.playwright.LoginTest@28261e8e]" started-at="2024-10-15T15:32:13 IST" name="loginTest" finished-at="2024-10-15T15:32:24 IST" duration-ms="11133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.playwright.LoginTest@28261e8e]" started-at="2024-10-15T15:32:34 IST" name="tearDown" finished-at="2024-10-15T15:32:36 IST" duration-ms="1333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.playwright.LoginTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- CrossBrowserSuite -->
+</testng-results>
