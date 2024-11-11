@@ -5,7 +5,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class AddToCartTest extends BaseTest {
-
+//changes 
 	@Parameters("browserType")
     @Test(priority = 4, dependsOnMethods = "com.example.playwright.LoginTest.loginTest") // Ensure loginTest runs first
     public void searchAndAddToCartTest() {
