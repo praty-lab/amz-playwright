@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-11T16:14:21 IST" name="CrossBrowserSuite" finished-at="2024-11-11T16:15:01 IST" duration-ms="39324">
+  <suite started-at="2024-11-11T18:07:21 IST" name="CrossBrowserSuite" finished-at="2024-11-11T18:08:33 IST" duration-ms="72006">
     <groups>
     </groups>
-    <test started-at="2024-11-11T16:14:21 IST" name="ChromiumTest" finished-at="2024-11-11T16:15:01 IST" duration-ms="39324">
+    <test started-at="2024-11-11T18:07:21 IST" name="ChromiumTest" finished-at="2024-11-11T18:08:33 IST" duration-ms="72006">
       <class name="com.example.playwright.AddToCartTest">
-        <test-method signature="searchAndAddToCartTest()[pri:1, instance:com.example.playwright.AddToCartTest@64a40280]" started-at="2024-11-11T16:14:55 IST" name="searchAndAddToCartTest" description="Search and add product to cart" finished-at="2024-11-11T16:15:00 IST" duration-ms="5003" status="FAIL">
+        <test-method signature="searchAndAddToCartTest()[pri:1, instance:com.example.playwright.AddToCartTest@1f53a5dc]" started-at="2024-11-11T18:08:28 IST" name="searchAndAddToCartTest" description="Search and add product to cart" finished-at="2024-11-11T18:08:33 IST" duration-ms="5003" status="FAIL">
           <exception class="com.microsoft.playwright.TimeoutError">
             <message>
               <![CDATA[Error {
   message='Timeout 5000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:624:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("#searchDropdownBox") to be visible
@@ -29,11 +29,11 @@ Call log:
   message='Timeout 5000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:624:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("#searchDropdownBox") to be visible
@@ -82,11 +82,11 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message='Timeout 5000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:624:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("#searchDropdownBox") to be visible
@@ -101,11 +101,11 @@ at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAndAddToCartTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailureOrSuccess(org.testng.ITestResult)[pri:0, instance:com.example.playwright.AddToCartTest@64a40280]" started-at="2024-11-11T16:15:00 IST" name="takeScreenshotOnFailureOrSuccess" finished-at="2024-11-11T16:15:00 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailureOrSuccess(org.testng.ITestResult)[pri:0, instance:com.example.playwright.AddToCartTest@1f53a5dc]" started-at="2024-11-11T18:08:33 IST" name="takeScreenshotOnFailureOrSuccess" finished-at="2024-11-11T18:08:33 IST" duration-ms="117" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchAndAddToCartTest status=FAILURE method=AddToCartTest.searchAndAddToCartTest()[pri:1, instance:com.example.playwright.AddToCartTest@64a40280] output={null}]]]>
+                <![CDATA[[TestResult name=searchAndAddToCartTest status=FAILURE method=AddToCartTest.searchAndAddToCartTest()[pri:1, instance:com.example.playwright.AddToCartTest@1f53a5dc] output={null}]]]>
               </value>
             </param>
           </params>
@@ -114,7 +114,7 @@ at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
         </test-method> <!-- takeScreenshotOnFailureOrSuccess -->
       </class> <!-- com.example.playwright.AddToCartTest -->
       <class name="com.example.playwright.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.example.playwright.LoginTest@3f9342d4]" started-at="2024-11-11T16:14:21 IST" name="setup" finished-at="2024-11-11T16:14:41 IST" duration-ms="19944" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.example.playwright.LoginTest@1efe439d]" started-at="2024-11-11T18:07:21 IST" name="setup" finished-at="2024-11-11T18:08:13 IST" duration-ms="51579" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,33 +125,33 @@ at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithInvalidCredentials()[pri:1, instance:com.example.playwright.LoginTest@3f9342d4]" started-at="2024-11-11T16:14:41 IST" name="loginWithInvalidCredentials" description="Login with invalid credentials" finished-at="2024-11-11T16:14:45 IST" duration-ms="3483" status="PASS">
+        <test-method signature="loginWithInvalidCredentials()[pri:1, instance:com.example.playwright.LoginTest@1efe439d]" started-at="2024-11-11T18:08:13 IST" name="loginWithInvalidCredentials" description="Login with invalid credentials" finished-at="2024-11-11T18:08:17 IST" duration-ms="4346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method is-config="true" signature="takeScreenshotOnFailureOrSuccess(org.testng.ITestResult)[pri:0, instance:com.example.playwright.LoginTest@3f9342d4]" started-at="2024-11-11T16:14:45 IST" name="takeScreenshotOnFailureOrSuccess" finished-at="2024-11-11T16:14:45 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailureOrSuccess(org.testng.ITestResult)[pri:0, instance:com.example.playwright.LoginTest@1efe439d]" started-at="2024-11-11T18:08:17 IST" name="takeScreenshotOnFailureOrSuccess" finished-at="2024-11-11T18:08:17 IST" duration-ms="163" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithInvalidCredentials status=SUCCESS method=LoginTest.loginWithInvalidCredentials()[pri:1, instance:com.example.playwright.LoginTest@3f9342d4] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithInvalidCredentials status=SUCCESS method=LoginTest.loginWithInvalidCredentials()[pri:1, instance:com.example.playwright.LoginTest@1efe439d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailureOrSuccess -->
-        <test-method signature="loginWithEmptyFields()[pri:2, instance:com.example.playwright.LoginTest@3f9342d4]" started-at="2024-11-11T16:14:45 IST" name="loginWithEmptyFields" description="Login with empty fields" finished-at="2024-11-11T16:14:50 IST" duration-ms="5003" status="FAIL">
+        <test-method signature="loginWithEmptyFields()[pri:2, instance:com.example.playwright.LoginTest@1efe439d]" started-at="2024-11-11T18:08:17 IST" name="loginWithEmptyFields" description="Login with empty fields" finished-at="2024-11-11T18:08:22 IST" duration-ms="5003" status="FAIL">
           <exception class="com.microsoft.playwright.TimeoutError">
             <message>
               <![CDATA[Error {
   message='Timeout 5000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("#nav-link-accountList")
@@ -162,11 +162,11 @@ Call log:
   message='Timeout 5000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("#nav-link-accountList")
@@ -216,11 +216,11 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message='Timeout 5000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("#nav-link-accountList")
@@ -235,29 +235,29 @@ at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithEmptyFields -->
-        <test-method is-config="true" signature="takeScreenshotOnFailureOrSuccess(org.testng.ITestResult)[pri:0, instance:com.example.playwright.LoginTest@3f9342d4]" started-at="2024-11-11T16:14:50 IST" name="takeScreenshotOnFailureOrSuccess" finished-at="2024-11-11T16:14:50 IST" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailureOrSuccess(org.testng.ITestResult)[pri:0, instance:com.example.playwright.LoginTest@1efe439d]" started-at="2024-11-11T18:08:23 IST" name="takeScreenshotOnFailureOrSuccess" finished-at="2024-11-11T18:08:23 IST" duration-ms="153" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithEmptyFields status=FAILURE method=LoginTest.loginWithEmptyFields()[pri:2, instance:com.example.playwright.LoginTest@3f9342d4] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithEmptyFields status=FAILURE method=LoginTest.loginWithEmptyFields()[pri:2, instance:com.example.playwright.LoginTest@1efe439d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailureOrSuccess -->
-        <test-method signature="loginTest()[pri:3, instance:com.example.playwright.LoginTest@3f9342d4]" started-at="2024-11-11T16:14:50 IST" name="loginTest" description="Login with valid credentials" finished-at="2024-11-11T16:14:55 IST" duration-ms="5003" status="FAIL">
+        <test-method signature="loginTest()[pri:3, instance:com.example.playwright.LoginTest@1efe439d]" started-at="2024-11-11T18:08:23 IST" name="loginTest" description="Login with valid credentials" finished-at="2024-11-11T18:08:28 IST" duration-ms="5003" status="FAIL">
           <exception class="com.microsoft.playwright.TimeoutError">
             <message>
               <![CDATA[Error {
   message='Timeout 5000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("#nav-link-accountList")
@@ -268,11 +268,11 @@ Call log:
   message='Timeout 5000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("#nav-link-accountList")
@@ -322,11 +322,11 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message='Timeout 5000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator("#nav-link-accountList")
@@ -341,18 +341,18 @@ at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="takeScreenshotOnFailureOrSuccess(org.testng.ITestResult)[pri:0, instance:com.example.playwright.LoginTest@3f9342d4]" started-at="2024-11-11T16:14:55 IST" name="takeScreenshotOnFailureOrSuccess" finished-at="2024-11-11T16:14:55 IST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotOnFailureOrSuccess(org.testng.ITestResult)[pri:0, instance:com.example.playwright.LoginTest@1efe439d]" started-at="2024-11-11T18:08:28 IST" name="takeScreenshotOnFailureOrSuccess" finished-at="2024-11-11T18:08:28 IST" duration-ms="115" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=FAILURE method=LoginTest.loginTest()[pri:3, instance:com.example.playwright.LoginTest@3f9342d4] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=FAILURE method=LoginTest.loginTest()[pri:3, instance:com.example.playwright.LoginTest@1efe439d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotOnFailureOrSuccess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.playwright.LoginTest@3f9342d4]" started-at="2024-11-11T16:15:00 IST" name="tearDown" finished-at="2024-11-11T16:15:01 IST" duration-ms="329" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.playwright.LoginTest@1efe439d]" started-at="2024-11-11T18:08:33 IST" name="tearDown" finished-at="2024-11-11T18:08:33 IST" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

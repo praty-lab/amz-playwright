@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 11 16:14:21 IST 2024</td>
+<td>Started on:</td><td>Mon Nov 11 18:07:21 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>39 seconds (39324 ms)</td>
+<tr><td>Total time:</td><td>72 seconds (72006 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,137 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.playwright.LoginTest.loginWithEmptyFields()'><b>loginWithEmptyFields</b><br>Test class: com.example.playwright.LoginTest<br>Test method: Login with empty fields</td>
-<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 5000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;#nav-link-accountList&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.PageImpl.lambda$click$18(PageImpl.java:682)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:681)
-	at com.microsoft.playwright.Page.click(Page.java:3902)
-	at com.example.playwright.LoginTest.loginWithEmptyFields(LoginTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 5000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;#nav-link-accountList&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 39 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1723278948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1723278948'><pre>com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 5000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;#nav-link-accountList&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.PageImpl.lambda$click$18(PageImpl.java:682)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:681)
-	at com.microsoft.playwright.Page.click(Page.java:3902)
-	at com.example.playwright.LoginTest.loginWithEmptyFields(LoginTest.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 5000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;#nav-link-accountList&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 39 more
-</pre></div></td>
-<td>5</td>
-<td>com.example.playwright.LoginTest@3f9342d4</td></tr>
-<tr>
 <td title='com.example.playwright.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.example.playwright.LoginTest<br>Test method: Login with valid credentials</td>
 <td><div><pre>com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator(&quot;#nav-link-accountList&quot;)
@@ -229,11 +108,11 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator(&quot;#nav-link-accountList&quot;)
@@ -242,16 +121,16 @@ Call log:
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
 	... 39 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1689458432", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1689458432'><pre>com.microsoft.playwright.TimeoutError: Error {
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace49547843", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace49547843'><pre>com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator(&quot;#nav-link-accountList&quot;)
@@ -301,11 +180,11 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator(&quot;#nav-link-accountList&quot;)
@@ -316,18 +195,18 @@ Call log:
 	... 39 more
 </pre></div></td>
 <td>5</td>
-<td>com.example.playwright.LoginTest@3f9342d4</td></tr>
+<td>com.example.playwright.LoginTest@1efe439d</td></tr>
 <tr>
 <td title='com.example.playwright.AddToCartTest.searchAndAddToCartTest()'><b>searchAndAddToCartTest</b><br>Test class: com.example.playwright.AddToCartTest<br>Test method: Search and add product to cart</td>
 <td><div><pre>com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:624:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator(&quot;#searchDropdownBox&quot;) to be visible
@@ -349,11 +228,11 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:624:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator(&quot;#searchDropdownBox&quot;) to be visible
@@ -362,16 +241,16 @@ Call log:
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
 	... 38 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1520656618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1520656618'><pre>com.microsoft.playwright.TimeoutError: Error {
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1288052401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1288052401'><pre>com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:624:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator(&quot;#searchDropdownBox&quot;) to be visible
@@ -420,11 +299,11 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17748050793637204812/package/lib/server/progress.js:78:26)
-    at Frame.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/frames.js:624:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17748050793637204812/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
 - waiting for locator(&quot;#searchDropdownBox&quot;) to be visible
@@ -435,7 +314,128 @@ Call log:
 	... 38 more
 </pre></div></td>
 <td>5</td>
-<td>com.example.playwright.AddToCartTest@64a40280</td></tr>
+<td>com.example.playwright.AddToCartTest@1f53a5dc</td></tr>
+<tr>
+<td title='com.example.playwright.LoginTest.loginWithEmptyFields()'><b>loginWithEmptyFields</b><br>Test class: com.example.playwright.LoginTest<br>Test method: Login with empty fields</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 5000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;#nav-link-accountList&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$18(PageImpl.java:682)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:681)
+	at com.microsoft.playwright.Page.click(Page.java:3902)
+	at com.example.playwright.LoginTest.loginWithEmptyFields(LoginTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 5000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;#nav-link-accountList&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace701166114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace701166114'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 5000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;#nav-link-accountList&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$18(PageImpl.java:682)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:681)
+	at com.microsoft.playwright.Page.click(Page.java:3902)
+	at com.example.playwright.LoginTest.loginWithEmptyFields(LoginTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 5000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;#nav-link-accountList&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 39 more
+</pre></div></td>
+<td>5</td>
+<td>com.example.playwright.LoginTest@1efe439d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -448,8 +448,8 @@ Call log:
 <tr>
 <td title='com.example.playwright.LoginTest.loginWithInvalidCredentials()'><b>loginWithInvalidCredentials</b><br>Test class: com.example.playwright.LoginTest<br>Test method: Login with invalid credentials</td>
 <td></td>
-<td>3</td>
-<td>com.example.playwright.LoginTest@3f9342d4</td></tr>
+<td>4</td>
+<td>com.example.playwright.LoginTest@1efe439d</td></tr>
 </table><p>
 </body>
 </html>

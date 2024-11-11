@@ -33,11 +33,11 @@
         <version>1.7.30</version>
     </dependency>
    
-   <dependency>
+  <!-- <dependency>
   	<groupId>com.example</groupId>
   	<artifactId>main</artifactId>
   	<version>0.0.1-SNAPSHOT</version>
-  </dependency>
+  </dependency> -->
   <!-- Allure TestNG Dependency -->
     <dependency>
         <groupId>io.qameta.allure</groupId>
