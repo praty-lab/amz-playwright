@@ -10,6 +10,7 @@
           <include name="tearDown"/>
           <include name="loginTest"/>
           <include name="loginWithEmptyFields"/>
+          <include name="takeScreenshotOnFailureOrSuccess"/>
         </methods>
       </class> <!-- com.example.playwright.LoginTest -->
       <class name="com.example.playwright.AddToCartTest">
@@ -17,20 +18,9 @@
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="searchAndAddToCartTest"/>
+          <include name="takeScreenshotOnFailureOrSuccess"/>
         </methods>
       </class> <!-- com.example.playwright.AddToCartTest -->
     </classes>
   </test> <!-- ChromiumTest(failed) -->
-  <test thread-count="1" name="FirefoxTest(failed)">
-    <parameter name="browserType" value="firefox"/>
-    <classes>
-      <class name="com.example.playwright.LoginTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="loginWithEmptyFields"/>
-        </methods>
-      </class> <!-- com.example.playwright.LoginTest -->
-    </classes>
-  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [CrossBrowserSuite] -->

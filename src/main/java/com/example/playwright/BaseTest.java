@@ -1,116 +1,73 @@
 package com.example.playwright;
 
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-
 import com.microsoft.playwright.*;
 
+import java.nio.file.Paths;
+import java.util.Scanner;
+
 public class BaseTest {
-    protected static Page page;    // Use static to ensure the same instance is shared
+    protected static Page page;
     protected static Browser browser;
     protected static BrowserContext context;
     protected static Playwright playwright;
-    private boolean isLoggedIn;
+    protected String username;
+    protected String password;
 
-    @Parameters("browserType") // Accept the parameter from the XML file
+    @Parameters("browserType")
     @BeforeTest(alwaysRun = true)
     public void setup(String browserType) {
-        System.out.println("Setting up the test for browser: " + browserType);
+    	
+    	Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter Amazon username: ");
+		username = scanner.nextLine();
+		
+		
+		System.out.print("Enter Amazon password: ");
+        password = scanner.nextLine();
+
+        scanner.close();  // Close the scanner after use
+    	
         playwright = Playwright.create();
+        browser = browserType.equalsIgnoreCase("chromium") ?
+                playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)) :
+                playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
 
-        switch (browserType.toLowerCase()) {
-            case "chromium":
-                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-                break;
-            case "firefox":
-                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
-                break;
-            default:
-                throw new IllegalArgumentException("Invalid browser: " + browserType);
-        }
-
-        // Ensure context and page are created for the browser
         context = browser.newContext();
         page = context.newPage();
+        
+        // Global timeout settings
+        page.setDefaultTimeout(5000);
+        page.setDefaultNavigationTimeout(10000);
+
         page.navigate("https://www.amazon.in/");
-        //loginCheck();
-        
     }
-    public boolean loginCheck() {
-    	
-        page.hover("#nav-link-accountList");
-        isLoggedIn = page.locator("text=Sign in").isVisible();
-        
-		return isLoggedIn;
-    	
+
+    // Screenshot handling on test completion
+    @AfterMethod(alwaysRun = true)
+    public void takeScreenshotOnFailureOrSuccess(ITestResult result) {
+        if (!result.isSuccess()) {
+            // Take a screenshot for failed test cases
+            page.screenshot(new Page.ScreenshotOptions()
+                    .setPath(Paths.get("screenshots", result.getName() + "_failure.png"))
+                    .setFullPage(true));
+        } else {
+            // Take a screenshot for successful test cases
+            page.screenshot(new Page.ScreenshotOptions()
+                    .setPath(Paths.get("screenshots", result.getName() + "_success.png"))
+                    .setFullPage(true));
+        }
     }
 
     @AfterTest(alwaysRun = true)
     public void tearDown() {
-        if (page != null) {
-            page.close();
-        }
-        if (context != null) {
-            context.close(); // Close context after tests are done
-        }
-        if (browser != null) {
-            browser.close(); // Close the browser
-        }
-        if (playwright != null) {
-            playwright.close(); // Close Playwright
-        }
+        if (page != null) page.close();
+        if (context != null) context.close();
+        if (browser != null) browser.close();
+        if (playwright != null) playwright.close();
     }
 }
-
-
-//import org.testng.annotations.AfterSuite;
-//import org.testng.annotations.BeforeSuite;
-//import org.testng.annotations.Parameters;
-//
-//
-//import com.microsoft.playwright.*;
-//public class BaseTest {
-//    protected static Page page;
-//    protected static Browser browser;
-//    protected static BrowserContext context;
-//    protected static Playwright playwright;
-//
-//    @BeforeSuite(alwaysRun = true)
-//    @Parameters("browserType")
-//    public void setup(String browserType) {
-//        playwright = Playwright.create();
-//        switch (browserType.toLowerCase()) {
-//            case "chromium":
-//                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-//                break;
-//            case "firefox":
-//                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
-//                break;
-//            case "webkit":
-//                browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
-//                break;
-//            default:
-//                throw new IllegalArgumentException("Invalid browser: " + browserType);
-//        }
-//
-//        context = browser.newContext();
-//        page = context.newPage();
-//        page.navigate("https://www.amazon.in/"); // or your desired URL
-//    }
-//
-//    @AfterSuite(alwaysRun = true)
-//    public void tearDown() {
-//        if (page != null) {
-//            page.close();
-//        }
-//        if (browser != null) {
-//            browser.close();
-//        }
-//        if (playwright != null) {
-//            playwright.close();
-//        }
-//    }
-//}
-//
-//

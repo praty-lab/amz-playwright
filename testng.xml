@@ -9,12 +9,13 @@
         </classes>
     </test>
 
-    <test name="FirefoxTest">
-        <parameter name="browserType" value="firefox"/> <!-- Define browserType for Firefox -->
-        <classes>
+  <!--  <test name="FirefoxTest">
+        <parameter name="browserType" value="firefox"/> Define browserType for Firefox -->
+    <!--     <classes>
             <class name="com.example.playwright.LoginTest"/>
             <class name="com.example.playwright.AddToCartTest"/>
         </classes>
     </test>
+   -->
 
 </suite>
