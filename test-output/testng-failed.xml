@@ -4,23 +4,22 @@
   <test thread-count="1" name="ChromiumTest(failed)">
     <parameter name="browserType" value="chromium"/>
     <classes>
+      <class name="com.example.playwright.AddToCartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="takeScreenshotOnFailureOrSuccess"/>
+          <include name="searchAndAddToCartTest"/>
+        </methods>
+      </class> <!-- com.example.playwright.AddToCartTest -->
       <class name="com.example.playwright.LoginTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="loginTest"/>
-          <include name="loginWithEmptyFields"/>
           <include name="takeScreenshotOnFailureOrSuccess"/>
         </methods>
       </class> <!-- com.example.playwright.LoginTest -->
-      <class name="com.example.playwright.AddToCartTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="searchAndAddToCartTest"/>
-          <include name="takeScreenshotOnFailureOrSuccess"/>
-        </methods>
-      </class> <!-- com.example.playwright.AddToCartTest -->
     </classes>
   </test> <!-- ChromiumTest(failed) -->
 </suite> <!-- Failed suite [CrossBrowserSuite] -->

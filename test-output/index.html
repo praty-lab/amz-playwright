@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,16 +101,6 @@
                       <a href="#" panel-name="suite-CrossBrowserSuite" class="show-methods failed suite-CrossBrowserSuite"> (show)</a> <!-- show-methods failed suite-CrossBrowserSuite -->
                     </span>
                     <div class="method-list-content failed suite-CrossBrowserSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.example.playwright.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.example.playwright.LoginTest" class="method navigator-link" hash-for-method="loginWithEmptyFields">loginWithEmptyFields</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-CrossBrowserSuite" title="com.example.playwright.AddToCartTest" class="method navigator-link" hash-for-method="searchAndAddToCartTest">searchAndAddToCartTest</a> <!-- method navigator-link -->
@@ -125,6 +115,16 @@
                       <a href="#" panel-name="suite-CrossBrowserSuite" class="show-methods passed suite-CrossBrowserSuite"> (show)</a> <!-- show-methods passed suite-CrossBrowserSuite -->
                     </span>
                     <div class="method-list-content passed suite-CrossBrowserSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.example.playwright.LoginTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowserSuite" title="com.example.playwright.LoginTest" class="method navigator-link" hash-for-method="loginWithEmptyFields">loginWithEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-CrossBrowserSuite" title="com.example.playwright.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidCredentials">loginWithInvalidCredentials</a> <!-- method navigator-link -->
@@ -157,76 +157,14 @@
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
-    at Frame.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:624:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-14524698968352094589/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-14524698968352094589/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-14524698968352094589/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-14524698968352094589/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-14524698968352094589/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
-- waiting for locator(&quot;#searchDropdownBox&quot;) to be visible
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060)
-	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1050)
-	at com.microsoft.playwright.impl.PageImpl.lambda$waitForSelector$93(PageImpl.java:1553)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.PageImpl.waitForSelector(PageImpl.java:1552)
-	at com.microsoft.playwright.Page.waitForSelector(Page.java:8191)
-	at com.example.playwright.AddToCartTest.searchAndAddToCartTest(AddToCartTest.java:12)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 5000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
-    at Frame.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:624:23)
-    at FrameDispatcher.waitForSelector (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:105:103)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;#searchDropdownBox&quot;) to be visible
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 38 more
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Search and add product to cart)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CrossBrowserSuite-class-failed -->
-          <div class="suite-CrossBrowserSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.example.playwright.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 5000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;#nav-link-accountList&quot;)
+- waiting for locator(&quot;body.a-aui_72554-c.a-aui_a11y_2_750578-t2.a-aui_a11y_6_837773-t2.a-aui_a11y_sr_678508-t1.a-aui_amzn_img_959719-t4.a-aui_amzn_img_gate_959718-t1.a-aui_killswitch_csa_logger_372963-c.a-aui_pci_risk_banner_210084-c.a-aui_template_weblab_cache_333406-c.a-aui_tnr_v2_180836-c.a-meter-animate:nth-child(2) div.a-container.sc-background-dark:nth-child(27) div.a-section.a-spacing-none.sc-fifteen-hundred-desktop-max-width:nth-child(5) div.a-fixed-right-flipped-grid:nth-child(6) div.a-fixed-right-grid-inner div.a-fixed-right-grid-col.a-col-right:nth-child(1) div.a-cardui.sc-card-style.sc-java-remote-feature.celwidget.sc-card-spacing-top-none div.a-cardui-body.a-scroller-none div.a-box-group.sc-buy-box-group:nth-child(1) div.a-section.sc-buy-box-inner-box:nth-child(9) span.celwidget:nth-child(3) span.a-button.a-button-normal.a-button-span12.a-button-primary:nth-child(1) span.a-button-inner &gt; input.a-button-input&quot;)
 
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
@@ -240,20 +178,20 @@ Call log:
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
 	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:681)
 	at com.microsoft.playwright.Page.click(Page.java:3902)
-	at com.example.playwright.LoginTest.loginTest(LoginTest.java:44)
+	at com.example.playwright.AddToCartTest.searchAndAddToCartTest(AddToCartTest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 5000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
+    at ProgressController.run (/tmp/playwright-java-14524698968352094589/package/lib/server/progress.js:78:26)
+    at Frame.click (/tmp/playwright-java-14524698968352094589/package/lib/server/frames.js:1013:23)
+    at FrameDispatcher.click (/tmp/playwright-java-14524698968352094589/package/lib/server/dispatchers/frameDispatcher.js:157:30)
+    at FrameDispatcher._handleCommand (/tmp/playwright-java-14524698968352094589/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-14524698968352094589/package/lib/server/dispatchers/dispatcher.js:361:39)
 }
 Call log:
-- waiting for locator(&quot;#nav-link-accountList&quot;)
+- waiting for locator(&quot;body.a-aui_72554-c.a-aui_a11y_2_750578-t2.a-aui_a11y_6_837773-t2.a-aui_a11y_sr_678508-t1.a-aui_amzn_img_959719-t4.a-aui_amzn_img_gate_959718-t1.a-aui_killswitch_csa_logger_372963-c.a-aui_pci_risk_banner_210084-c.a-aui_template_weblab_cache_333406-c.a-aui_tnr_v2_180836-c.a-meter-animate:nth-child(2) div.a-container.sc-background-dark:nth-child(27) div.a-section.a-spacing-none.sc-fifteen-hundred-desktop-max-width:nth-child(5) div.a-fixed-right-flipped-grid:nth-child(6) div.a-fixed-right-grid-inner div.a-fixed-right-grid-col.a-col-right:nth-child(1) div.a-cardui.sc-card-style.sc-java-remote-feature.celwidget.sc-card-spacing-top-none div.a-cardui-body.a-scroller-none div.a-box-group.sc-buy-box-group:nth-child(1) div.a-section.sc-buy-box-inner-box:nth-child(9) span.celwidget:nth-child(3) span.a-button.a-button-normal.a-button-span12.a-button-primary:nth-child(1) span.a-button-inner &gt; input.a-button-input&quot;)
 
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
@@ -262,62 +200,7 @@ Call log:
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Login with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithEmptyFields">
-                  </a> <!-- loginWithEmptyFields -->
-                  <span class="method-name">loginWithEmptyFields</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 5000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;#nav-link-accountList&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.PageImpl.lambda$click$18(PageImpl.java:682)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:681)
-	at com.microsoft.playwright.Page.click(Page.java:3902)
-	at com.example.playwright.LoginTest.loginWithEmptyFields(LoginTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 5000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 5000ms exceeded.
-    at ProgressController.run (/tmp/playwright-java-17568882624308621776/package/lib/server/progress.js:78:26)
-    at Frame.click (/tmp/playwright-java-17568882624308621776/package/lib/server/frames.js:1013:23)
-    at FrameDispatcher.click (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/frameDispatcher.js:157:30)
-    at FrameDispatcher._handleCommand (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:94:40)
-    at DispatcherConnection.dispatch (/tmp/playwright-java-17568882624308621776/package/lib/server/dispatchers/dispatcher.js:361:39)
-}
-Call log:
-- waiting for locator(&quot;#nav-link-accountList&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-	... 39 more
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Login with empty fields)                  </em>
+(Select category from dropdown, search for a product and add to cart)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -330,11 +213,29 @@ Call log:
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <em>
+(login validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithEmptyFields">
+                  </a> <!-- loginWithEmptyFields -->
+                  <span class="method-name">loginWithEmptyFields</span>
+                  <em>
+(login validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginWithInvalidCredentials">
                   </a> <!-- loginWithInvalidCredentials -->
                   <span class="method-name">loginWithInvalidCredentials</span>
                   <em>
-(Login with invalid credentials)                  </em>
+(login validation)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -395,26 +296,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.example.playwright.LoginTest')
-data.setCell(0, 3, 5003);
+data.setCell(0, 1, 'searchAndAddToCartTest')
+data.setCell(0, 2, 'com.example.playwright.AddToCartTest')
+data.setCell(0, 3, 14377);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchAndAddToCartTest')
-data.setCell(1, 2, 'com.example.playwright.AddToCartTest')
-data.setCell(1, 3, 5003);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.example.playwright.LoginTest')
+data.setCell(1, 3, 11560);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginWithEmptyFields')
 data.setCell(2, 2, 'com.example.playwright.LoginTest')
-data.setCell(2, 3, 5003);
+data.setCell(2, 3, 5739);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginWithInvalidCredentials')
 data.setCell(3, 2, 'com.example.playwright.LoginTest')
-data.setCell(3, 3, 4346);
+data.setCell(3, 3, 4180);
 window.suiteTableData['CrossBrowserSuite']= { tableData: data, tableDiv: 'times-div-CrossBrowserSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-CrossBrowserSuite">
               </div> <!-- times-div-CrossBrowserSuite -->
             </div> <!-- times-div -->
@@ -456,31 +357,27 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginWithInvalidCredentials</span>
-                <span class="method-start">51613 ms</span>
+                <span class="method-start">49015 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailureOrSuccess([TestResult name=loginWithInvalidCredentials status=SUCCESS method=LoginTest.loginWithInvalidCredent...)</span>
-                <span class="method-start">55998 ms</span>
+                <span class="method-start">53275 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginWithEmptyFields</span>
-                <span class="method-start">56168 ms</span>
+                <span class="method-start">53421 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotOnFailureOrSuccess([TestResult name=loginWithEmptyFields status=FAILURE method=LoginTest.loginWithEmptyFields()[pri:2, ...)</span>
-                <span class="method-start">61192 ms</span>
+                <span class="method-name">takeScreenshotOnFailureOrSuccess([TestResult name=loginWithEmptyFields status=SUCCESS method=LoginTest.loginWithEmptyFields()[pri:2, ...)</span>
+                <span class="method-start">59162 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginTest</span>
-                <span class="method-start">61346 ms</span>
+                <span class="method-start">59282 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenshotOnFailureOrSuccess([TestResult name=loginTest status=FAILURE method=LoginTest.loginTest()[pri:3, instance:com.example.p...)</span>
-                <span class="method-start">66354 ms</span>
+                <span class="method-name">takeScreenshotOnFailureOrSuccess([TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest()[pri:3, instance:com.example.p...)</span>
+                <span class="method-start">70843 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -489,18 +386,18 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searchAndAddToCartTest</span>
-                <span class="method-start">66471 ms</span>
+                <span class="method-start">72520 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenshotOnFailureOrSuccess([TestResult name=searchAndAddToCartTest status=FAILURE method=AddToCartTest.searchAndAddToCartTest()...)</span>
-                <span class="method-start">71478 ms</span>
+                <span class="method-start">86904 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.playwright.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">71596 ms</span>
+                <span class="method-start">87633 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
