@@ -10,6 +10,7 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
 public class AddToCartTest extends BaseTest {
+
 	@Parameters("browserType")
 	@Test(priority = 4, dependsOnMethods = "com.example.playwright.LoginTest.loginTest", description = "Select category from dropdown, search for a product and add to cart") // Ensure																													// first
 	@Story("Search for a product add it to cart")
